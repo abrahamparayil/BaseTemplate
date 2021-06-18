@@ -1,0 +1,19 @@
+{{define "main"}}
+<main id="main">
+  <div>
+        <br>
+            <h1>{{.Title}}</h1>
+    {{ range .Pages }}
+        <h3><a href="{{.Permalink}}">{{.Title}}</a></h3>
+        <h6>{{ $author := "false" }}
+          {{  if not (eq .Params.Author $author) }}
+          <p><b>By : </b><a href="{{ .Params.authorUrl }}">{{ .Params.AuthorName }}</a>
+            | {{.Date.Format "2006-01-02"}} | <b>Reading Time:</b> {{.ReadingTime}} min
+          </p>
+          {{ end }}</h6>
+        <p>{{ .Summary }}</p>
+    {{ end }}
+    </div>
+  </div>
+</main>
+{{end}}

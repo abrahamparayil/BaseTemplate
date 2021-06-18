@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section id="main">
+  <div>
+    <h1 id="title">{{ .Title }}</h1>
+     {{ $author := "false" }}
+    {{  if not (eq .Params.Author $author) }}
+    By <a href="{{ .Params.AuthorUrl }}">{{ .Params.AuthorName }}</a> |
+    {{end}}
+    {{range .Params.Tags }}
+      <div >
+        <a href='{{ "tags/" | relLangURL }}{{.}}'>{{.}}</a>
+      </div>
+    {{end}}
+    | {{.Date.Format "2006-01-02"}} | <b>Reading Time:</b> {{.ReadingTime}} min
+  <hr>
+        <article id="content">
+           {{ .Content }}
+        </article>
+  </div>
+</section >
+{{ end }}
