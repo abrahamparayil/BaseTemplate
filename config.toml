@@ -1,4 +1,4 @@
-baseURL = "https://avron.gitlab.io/"
+baseURL = "https://avron.gitlab.io/basetemplate"
 languageCode = "en-us"
 title = "BaseTemplate"
 
