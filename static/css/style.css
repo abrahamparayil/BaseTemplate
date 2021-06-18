@@ -15,5 +15,36 @@ body{
 }
 
 h1,h2,h3{
-    line-height: 1.4
+    line-height: 1.4;
+    margin: 10px 0px;
+}
+
+main{
+    margin: 25px 0px;
+}
+footer{
+    text-align: center;
+    margin: 25px 0px;
+    border-top: #454545 1px double;
+}
+
+footer p {
+    margin: 20px 0px;
+}
+a:link {
+  color: lightseagreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightseagreen;
+  background-color: transparent;
+  text-decoration: underline;
 }
