@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "baseTemp"
+
+[params]
+    subtitle = "A barebones hugo template"
+[params.main]
+    enabled = true
+    description = "Your Description"
+    img = "Link to image"
