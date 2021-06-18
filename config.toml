@@ -1,10 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "https://avron.gitlab.io/basetemplate/"
 languageCode = "en-us"
-title = "baseTemp"
+title = "BaseTemplate"
 
 [params]
     subtitle = "A barebones hugo template"
-[params.main]
-    enabled = true
-    description = "Your Description"
-    img = "Link to image"
+    [params.main]
+        enabled = true
+        description = "A barebones hugo template"
+        img = "Link to image"
